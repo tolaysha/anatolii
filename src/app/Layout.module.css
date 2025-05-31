@@ -1,0 +1,33 @@
+#screen {
+  position: relative; /* Родитель всех слоев */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Убирает прокрутку для всего экрана */
+}
+
+#screen video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Видео занимает весь экран */
+  z-index: -1; /* Помещает видео на задний план */
+}
+
+#top {
+  position: relative;
+  z-index: 2; /* Поверх видео */
+}
+
+#mid {
+  position: relative;
+  z-index: 1; /* Между top и bot */
+  overflow-y: auto; /* Включает вертикальную прокрутку для содержимого */
+  height: 100vh;
+}
+
+#bot {
+  position: relative;
+  z-index: 0; /* Самый нижний слой */
+}

@@ -1,0 +1,13 @@
+.pushButton {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.pushButton:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}

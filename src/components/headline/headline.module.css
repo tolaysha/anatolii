@@ -1,0 +1,41 @@
+.headlineContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2; /* Поверх видео */
+}
+
+.bottomNavigation {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.action {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.action:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.pushButton {
+  margin-top: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.pushButton:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}

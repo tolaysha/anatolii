@@ -1,4 +1,4 @@
-import TimelineComponent from "../components/Timeline";
+import TimelineComponent from "../components/timeline/timeline";
 import styles from "./Home.module.css";
 
 export default function Home() {
