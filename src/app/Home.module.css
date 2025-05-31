@@ -1,4 +1,15 @@
-.container {
-    margin: 0;
-    padding: 0;   
+.content {
+    position: relative;
+    z-index: 1; /* Помещает содержимое поверх видео */
+    overflow-y: auto; /* Включает вертикальную прокрутку для содержимого */
+    height: 100vh; /* Ограничивает высоту содержимого */
+    padding: 20px; /* Добавляет отступы для содержимого */
+    box-sizing: border-box; /* Учитывает padding в размерах элемента */
+
+    /* Скрытие скроллбара */
+    scrollbar-width: none; /* Firefox */
+}
+
+.content::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
 }
