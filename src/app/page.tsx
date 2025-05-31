@@ -1,11 +1,14 @@
 import styles from './Home.module.css';
-import Image from "next/image";
+import TimelineComponent from "../components/Timeline";
+
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        
+    <div>
+      <main>
+      <div className={styles.container}>
+        <TimelineComponent />
+      </div>
       </main>
     </div>
   );
