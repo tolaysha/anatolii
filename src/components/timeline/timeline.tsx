@@ -1,35 +1,31 @@
 "use client";
 
-import React, { useRef } from "react";
-import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot } from "@mui/lab";
-import styles from "./Timeline.module.css";
-import { events } from "@/constants/events"; // Используем абсолютный путь для импорта событий
-import { useAutoScroll } from "@/hooks/useAutoScroll"; // Используем абсолютный путь для импорта хука
+import React from "react";
+import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent } from "@mui/lab";
+import styles from "./timeline.module.css";
+import { events } from "../../constants/events";
 
-export default function TimelineComponent() {
-  const timelineRef = useRef<HTMLDivElement>(null);
-
-  //useAutoScroll(timelineRef, 5000);
-
+export default function TIMELINE() {
   return (
-    <div className={styles.timelineContainer} ref={timelineRef}>
-      <h1 className={styles.timelineTitle}>Anatolii Kuzmin</h1>
-      <Timeline position="alternate">
+    <div className={styles.timelineContainer}>
+      <Timeline position="right" className={styles.timeline}>
         {events.map((event, index) => (
           <TimelineItem key={index}>
             <TimelineSeparator>
-              <TimelineDot color="primary" />
-              {index < events.length - 1 && <TimelineConnector />}
+              <span
+                className={styles.timelineDate}
+                style={{
+                  "--size": `${Math.random() * 0.3 + 1}rem`, // Случайный размер текста
+                  "--rotation": `${Math.random() * 30 - 15}deg`, // Случайный поворот текста
+                } as React.CSSProperties}
+              >
+                {event.date}
+              </span>
+              {index < events.length - 1 && <TimelineConnector style={{ backgroundColor: "#35393e" }} />}
             </TimelineSeparator>
             <TimelineContent>
-              <div
-                className={
-                  index % 2 === 0
-                    ? styles.timelineContent
-                    : styles.timelineContentAlternate
-                }
-              >
-                <strong>{event.date}</strong>
+              <div className={styles.timelineContent}>
+               
                 <p>{event.description}</p>
               </div>
             </TimelineContent>

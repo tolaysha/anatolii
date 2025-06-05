@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
 
+@font-face {
+  font-family: "AirmoleAntiqueRegular";
+  src: url("/AirmoleAntiqueRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "CustomFont", sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;

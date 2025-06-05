@@ -14,28 +14,35 @@
   box-shadow: none;
 }
 
-.action {
-  color: #fff;
+.action:nth-child(1) {
+  color: #888; /* Менее темный оттенок серого */
   font-size: 1.2rem;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-weight: bold; /* Жирный шрифт */
+}
+
+.action:nth-child(2) {
+  color: #666; /* Средний оттенок серого */
+  font-size: 1.2rem;
+  font-weight: bold; /* Жирный шрифт */
+}
+
+.action:nth-child(3) {
+  color: #444; /* Более темный оттенок серого */
+  font-size: 1.2rem;
+  font-weight: bold; /* Жирный шрифт */
+}
+
+.action.Mui-selected {
+  color: #000; /* Темный цвет текста для активного состояния */
 }
 
 .action:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
+  color: #000; /* Темный цвет текста при наведении */
 }
 
 .pushButton {
   margin-top: 10px;
   background-color: transparent;
-  color: #fff;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.pushButton:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
+  color: #000; /* Сделано темнее для лучшей видимости */
+  font-weight: bold; /* Добавлен жирный шрифт */
 }

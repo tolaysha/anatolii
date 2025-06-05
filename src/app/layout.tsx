@@ -3,15 +3,16 @@ import HEADLINE from "../components/headline/headline";
 import TIMELINE from "../components/timeline/timeline";
 import VIDEO from "../components/video/video";
 import styles from "./layout.module.css";
+import AppBar from "../components/appbar/appbar";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
+    
     <html lang="en">
       <body>
         <div id="screen" className={styles.screen}>
-          <VIDEO />
           <div id="top" className={styles.top}>
-            <HEADLINE />
+            <AppBar />
           </div>
           <div id="mid" className={styles.mid}>
             <TIMELINE />

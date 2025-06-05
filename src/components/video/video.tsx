@@ -7,8 +7,8 @@ export default function VIDEO() {
   return (
     <div className={styles.videoContainer}>
       <video autoPlay muted loop playsInline className={styles.video}>
-        <source src="/sandstorm.mp4" type="video/mp4" />
+         <source src="/blackend.mp4" type="video/mp4" />
       </video>
     </div>
   );
-}
+} 

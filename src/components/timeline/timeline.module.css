@@ -1,54 +1,10 @@
-.timeline {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  padding: 20px;
-  margin: 0 auto; /* Центрируем компонент */
-  width: 80%; /* Устанавливаем ширину */
+.timelineNumber {
+  color: black;
+}
+.timelineContent{
+  color: black;
 }
 
-.title {
-  font-size: 2rem; /* Размер шрифта заголовка */
-  font-weight: bold; /* Жирный шрифт */
-  text-align: center; /* Центрируем текст */
-  margin-bottom: 20px; /* Отступ снизу */
-}
-
-.line {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  width: 2px;
-  background-color: #ccc; /* Цвет линии */
-}
-
-.event {
-  display: flex;
-  align-items: flex-start;
-  margin: 20px 0; /* Отступ между событиями */
-}
-
-.point {
-  width: 10px;
-  height: 10px;
-  background-color: #0070f3;
-  border-radius: 50%;
-  margin-right: 20px; /* Отступ между точкой и текстом */
-}
-
-.details {
-  display: flex;
-  flex-direction: column;
-}
-
-.date {
-  font-weight: bold;
-  color: #333;
-}
-
-.description {
-  color: #666;
-  margin-top: 5px; /* Отступ между датой и описанием */
+.timelineContentAlternate{
+  color: black;
 }

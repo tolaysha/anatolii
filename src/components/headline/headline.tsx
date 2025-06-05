@@ -12,7 +12,7 @@ export default function HEADLINE() {
   return (
     <div className={styles.headlineContainer}>
       <BottomNavigation
-        value={value}
+        value={1}
         onChange={(event, newValue) => setValue(newValue)}
         className={styles.bottomNavigation}
       >
@@ -20,7 +20,6 @@ export default function HEADLINE() {
         <BottomNavigationAction label="I" className={styles.action} />
         <BottomNavigationAction label="AM" className={styles.action} />
       </BottomNavigation>
-      <PUSH />
     </div>
   );
 }
