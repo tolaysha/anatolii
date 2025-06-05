@@ -1,0 +1,26 @@
+.coreContainer {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px; /* Ограничиваем ширину списка */
+}
+
+.eventList {
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0;
+  margin: 0;
+}
+
+.eventItem {
+  margin-bottom: 15px; /* Отступ между событиями */
+  padding: 10px;
+}
+
+.eventDate {
+  font-weight: bold;
+  color: #35393e; /* Цвет даты */
+  display: block;
+}
+
+.eventDescription {
+  color: #35393e;; /* Цвет описания */
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import HEADLINE from "../components/headline/headline";
-import TIMELINE from "../components/timeline/timeline";
 import VIDEO from "../components/video/video";
+import Core from "../components/core/core";
 import styles from "./layout.module.css";
 import AppBar from "../components/appbar/appbar";
 
@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <AppBar />
           </div>
           <div id="mid" className={styles.mid}>
-            <TIMELINE />
+            <Core />
           </div>
           <div id="bot" className={styles.bot}>{children}</div>
         </div>
